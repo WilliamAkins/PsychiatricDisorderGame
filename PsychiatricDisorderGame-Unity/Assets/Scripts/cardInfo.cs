@@ -19,5 +19,8 @@ public class cardInfo : MonoBehaviour
         Debug.Log(cardName);
 
         transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("card_faces/" + cardName);
+
+        //store this new card within the played cards list
+        GameData.updateCardPlayedList(suitNum, cardNum);
     }
 }
