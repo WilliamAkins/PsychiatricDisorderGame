@@ -13,6 +13,8 @@ public static class GameData
 
     private static int guess = -1; //says whether the player guessed lower or higher, 0 = lower, 1 = higher, -1 = None
 
+    private static bool isFirstRound = true; //says whether we are on the first round of showing cards and therefore there is only 0 - 1 cards in the game
+
     public static void incrementState()
     {
         currentState = currentState + 1;
@@ -55,6 +57,11 @@ public static class GameData
         return cardsPlayed.Last();
     }
 
+    public static List<int> returnSecondLastCardPlayed() //needed for comparison to the previous card that was played
+    {
+        return cardsPlayed[cardsPlayed.Count - 1];
+    }
+
     public static void makeGuess(int newGuess)
     {
         guess = newGuess;
@@ -63,5 +70,15 @@ public static class GameData
     public static int returnGuess()
     {
         return guess;
+    }
+
+    public static void setIsFirstRound(bool newIsFirstRound)
+    {
+        isFirstRound = newIsFirstRound;
+    }
+
+    public static bool returnIsFirstRound()
+    {
+        return isFirstRound;
     }
 }

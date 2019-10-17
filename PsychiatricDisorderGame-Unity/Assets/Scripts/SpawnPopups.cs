@@ -14,11 +14,17 @@ public class SpawnPopups : MonoBehaviour
     void Update()
     {
         //spawns the outcome popup
-        if (GameData.returnCurrentState() == GameData.GameState.showOutcomePopup)
+        if (GameData.returnCurrentState() == GameData.GameState.showOutcomePopup && !GameData.returnIsFirstRound())
         {
             GameObject makeGuessPopup = Instantiate(Resources.Load("popup_outcome"), Vector3.zero, Quaternion.identity) as GameObject;
 
             GameData.incrementState();
+        }
+        else if (GameData.returnCurrentState() == GameData.GameState.showOutcomePopup && GameData.returnIsFirstRound()) //allow the usual game state progression order to be bypassed for the first round
+        {
+            //instantly go to making a guess without showing an outcome
+            GameData.setCurrentState(GameData.GameState.ShowGuessPopup);
+            GameData.setIsFirstRound(false);
         }
 
         //spawns the MakeGuess popup

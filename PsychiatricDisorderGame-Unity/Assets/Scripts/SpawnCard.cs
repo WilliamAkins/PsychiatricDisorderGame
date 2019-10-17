@@ -59,6 +59,13 @@ public class SpawnCard : MonoBehaviour
         //Instantiate a blank template before any card data is assigned to it.
         currentCard = Instantiate(cardTemplate, Vector3.zero, Quaternion.identity);
 
+        //determine if the card that has been spawned is higher or lower than the previous card
+        if(GameData.returnIsFirstRound())
+        {
+            Debug.Log("previous card = " + GameData.returnPrevCardPlayed());
+            Debug.Log("Second last card played = " + GameData.returnSecondLastCardPlayed());
+        }
+
         //since a card has been spawned, move to the next state
         GameData.incrementState();
     }
