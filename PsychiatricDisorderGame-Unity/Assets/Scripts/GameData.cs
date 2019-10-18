@@ -8,12 +8,12 @@ public static class GameData
     public enum GameState { SpawnCard, MoveCard, showOutcomePopup, handleOutcome, ShowGuessPopup, MakingAGuess }
     private static GameState currentState = GameState.SpawnCard;
     
-    //stores a list of all the different cards which have already been played
-    private static List<List<int>> cardsPlayed = new List<List<int>>();
-
-    private static int guess = -1; //says whether the player guessed lower or higher, 0 = lower, 1 = higher, -1 = None
-
+    private static List<List<int>> cardsPlayed = new List<List<int>>(); //stores a list of all the different cards which have already been played
+    private static bool newCardIsHigher = false; //says whether the new card is higher or lower than the previous one played
+    private static bool guessedHigher = false; //says whether the player guessed lower or higher | false = lower, true = higher
     private static bool isFirstRound = true; //says whether we are on the first round of showing cards and therefore there is only 0 - 1 cards in the game
+    private static int points = 0; //the points that the player has
+
 
     public static void incrementState()
     {
@@ -43,8 +43,9 @@ public static class GameData
     public static void updateCardPlayedList(int cardSuit, int cardNum)
     {
         cardsPlayed.Add(new List<int>());
-        cardsPlayed[cardsPlayed.Count - 1].Add(cardSuit);
-        cardsPlayed[cardsPlayed.Count - 1].Add(cardNum);
+
+        cardsPlayed.Last().Add(cardSuit);
+        cardsPlayed.Last().Add(cardNum);
     }
 
     public static int returnNumOfCardsPlayed()
@@ -59,17 +60,22 @@ public static class GameData
 
     public static List<int> returnSecondLastCardPlayed() //needed for comparison to the previous card that was played
     {
-        return cardsPlayed[cardsPlayed.Count - 1];
+        return cardsPlayed[cardsPlayed.Count - 2];
     }
 
-    public static void makeGuess(int newGuess)
+    public static List<List<int>> returnCardsPlayed()
     {
-        guess = newGuess;
+        return cardsPlayed;
     }
 
-    public static int returnGuess()
+    public static void makeGuess(bool newGuess)
     {
-        return guess;
+        guessedHigher = newGuess;
+    }
+
+    public static bool returnGuessedHigher()
+    {
+        return guessedHigher;
     }
 
     public static void setIsFirstRound(bool newIsFirstRound)
@@ -80,5 +86,30 @@ public static class GameData
     public static bool returnIsFirstRound()
     {
         return isFirstRound;
+    }
+
+    public static bool returnNewCardIsHigher()
+    {
+        return newCardIsHigher;
+    }
+
+    public static void setNewCardIsHigher(bool cardBool)
+    {
+        newCardIsHigher = cardBool;
+    }
+
+    public static void addToPoints(int num)
+    {
+        points += num;
+    }
+
+    public static void setPoints(int num)
+    {
+        points = num;
+    }
+
+    public static int returnPoints()
+    {
+        return points;
     }
 }

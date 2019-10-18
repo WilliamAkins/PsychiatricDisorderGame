@@ -33,17 +33,17 @@ public class OutcomeHandler : MonoBehaviour
         Image bottomPanel = transform.Find("bgMain/bottomPanel").GetComponent<Image>();
         Image btnContinueBackground = transform.Find("bgMain/btnContinue").GetComponent<Image>();
         
-        if (outcomeType == 0) //if negetive outcome
-        {
-            bgMain.color = negativePrimaryColour;
-            bottomPanel.color = negativeSecondaryColour;
-            btnContinueBackground.color = negativeButtonColour;
-        }
-        else
+        if ((GameData.returnGuessedHigher() == true && GameData.returnNewCardIsHigher() == true) || (GameData.returnGuessedHigher() == false && GameData.returnNewCardIsHigher() == false)) //if positive outcome
         {
             bgMain.color = positivePrimaryColour;
             bottomPanel.color = positiveSecondaryColour;
             btnContinueBackground.color = positiveButtonColour;
+        }
+        else //else if negative outcome
+        {
+            bgMain.color = negativePrimaryColour;
+            bottomPanel.color = negativeSecondaryColour;
+            btnContinueBackground.color = negativeButtonColour;
         }
 
         btnContinue = transform.Find("bgMain/btnContinue").GetComponent<Button>();

@@ -1,0 +1,33 @@
+{
+	"positiveCards":
+    [
+    	{
+    		"Heading": "positive card heading 1",
+    		"SubHeading": "positive card subheading 1",
+    		"Description": "positive card description 1",
+    		"Points": 2
+    	},
+    	{
+    		"Heading": "positive card heading 2",
+    		"SubHeading": "positive card subheading 2",
+    		"Description": "positive card description 2",
+    		"Points": 3
+    	}
+    ],
+
+    "negativeCards":
+    [
+    	{
+    		"Heading": "negative card heading 1",
+    		"SubHeading": "negative card subheading 1",
+    		"Description": "negative card description 1",
+    		"Points": -1
+    	},
+    	{
+    		"Heading": "negative card heading 2",
+    		"SubHeading": "negative card subheading 2",
+    		"Description": "negative card description 2",
+    		"Points": -2
+    	}
+    ]
+}
