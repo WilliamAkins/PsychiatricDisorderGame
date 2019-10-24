@@ -1,32 +1,32 @@
 {
-	"positiveCards":
+	"positiveOutcomes":
     [
     	{
-    		"Heading": "positive card heading 1",
-    		"SubHeading": "positive card subheading 1",
-    		"Description": "positive card description 1",
+    		"Heading": "positive outcome heading 1",
+    		"SubHeading": "positive outcome subheading 1",
+    		"Description": "positive outcome description 1",
     		"Points": 2
     	},
     	{
-    		"Heading": "positive card heading 2",
-    		"SubHeading": "positive card subheading 2",
-    		"Description": "positive card description 2",
+    		"Heading": "positive outcome heading 2",
+    		"SubHeading": "positive outcome subheading 2",
+    		"Description": "positive outcome description 2",
     		"Points": 3
     	}
     ],
 
-    "negativeCards":
+    "negetiveOutcomes":
     [
     	{
-    		"Heading": "negative card heading 1",
-    		"SubHeading": "negative card subheading 1",
-    		"Description": "negative card description 1",
+    		"Heading": "negative outcome heading 1",
+    		"SubHeading": "negative outcome subheading 1",
+    		"Description": "negative outcome description 1",
     		"Points": -1
     	},
     	{
-    		"Heading": "negative card heading 2",
-    		"SubHeading": "negative card subheading 2",
-    		"Description": "negative card description 2",
+    		"Heading": "negative outcome heading 2",
+    		"SubHeading": "negative outcome subheading 2",
+    		"Description": "negative outcome description 2",
     		"Points": -2
     	}
     ]

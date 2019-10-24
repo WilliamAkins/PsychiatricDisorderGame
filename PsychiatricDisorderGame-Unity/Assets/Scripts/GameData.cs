@@ -7,6 +7,8 @@ public static class GameData
 {
     public enum GameState { SpawnCard, MoveCard, showOutcomePopup, handleOutcome, ShowGuessPopup, MakingAGuess }
     private static GameState currentState = GameState.SpawnCard;
+
+    private static Outcome outcomes; //stores the data that was loaded from outcomes JSON
     
     private static List<List<int>> cardsPlayed = new List<List<int>>(); //stores a list of all the different cards which have already been played
     private static bool newCardIsHigher = false; //says whether the new card is higher or lower than the previous one played
@@ -37,6 +39,16 @@ public static class GameData
     public static GameState returnCurrentState()
     {
         return currentState;
+    }
+
+    public static void setOutcomes(Outcome newOutcomes)
+    {
+        outcomes = newOutcomes;
+    }
+
+    public static Outcome returnOutcome()
+    {
+        return outcomes;
     }
 
     //update the 2D list of cards which have been played
