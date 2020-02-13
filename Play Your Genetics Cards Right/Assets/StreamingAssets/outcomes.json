@@ -1,0 +1,311 @@
+{
+	"GeneticCards":
+	{
+		"GoodCards":
+	    [
+	    	{
+	    		"Heading": "APOE2",
+	    		"SubHeading": "Reduction in Alzheimer’s Disease Risk",
+	    		"Description": "Positive description 1.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": 5
+	    	},
+	    	{
+	    		"Heading": "G allele at rs4388808 within CYP2C19",
+	    		"SubHeading": "Reduction in Alzheimer’s Disease Pathology",
+	    		"Description": "Positive description 2.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": 2
+	    	},
+	    	{
+	    		"Heading": "22q11.2 Duplication",
+	    		"SubHeading": "Reduction in Schizophrenia Risk",
+	    		"Description": "Positive description 3.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": 4
+	    	},
+	    	{
+	    		"Heading": "XX Genotype",
+	    		"SubHeading": "Reduction in Developmental Disorder Risk",
+	    		"Description": "Positive description 4.",
+	    		"Gender": "Female",
+	    		"References": "",
+	    		"Points": 5
+	    	},
+	    	{
+	    		"Heading": "XY Genotype",
+	    		"SubHeading": "Reduction in Major Depression Risk",
+	    		"Description": "Positive description 5.",
+	    		"Gender": "Male",
+	    		"References": "",
+	    		"Points": 2
+	    	}
+	    ],
+
+	    "BadCards":
+	    [
+	    	{
+	    		"Heading": "APOE4",
+	    		"SubHeading": "Increase in Alzheimer’s Disease Risk",
+	    		"Description": "Negative description 1.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -3
+	    	},
+	    	{
+	    		"Heading": "R47H Mutation in TREM2",
+	    		"SubHeading": "Increase in Alzheimer’s Disease Risk",
+	    		"Description": "Negative description 2.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -5
+	    	},
+	    	{
+	    		"Heading": "T allele at rs1344706 in ZNF804A",
+	    		"SubHeading": "Increase in Psychosis Risk",
+	    		"Description": "Negative description 3.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -1
+	    	},
+	    	{
+	    		"Heading": "XX Genotype",
+	    		"SubHeading": "Increase in Major Depression Risk",
+	    		"Description": "Negative description 4.",
+	    		"Gender": "Female",
+	    		"References": "",
+	    		"Points": -2
+	    	},
+	    	{
+	    		"Heading": "XY Genotype",
+	    		"SubHeading": "Increase in Developmental Disorder Risk",
+	    		"Description": "Negative description 5.",
+	    		"Gender": "Male",
+	    		"References": "",
+	    		"Points": -2
+	    	},
+	    	{
+	    		"Heading": "22q11.2 Deletion",
+	    		"SubHeading": "Increase in Developmental Disorder and Psychosis Risk",
+	    		"Description": "Negative description 6.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -4
+	    	},
+	    	{
+	    		"Heading": "A allele at rs9677504 in SPAG16",
+	    		"SubHeading": "Increase in ADHD Risk",
+	    		"Description": "Negative description 7.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -1
+	    	},
+	    	{
+	    		"Heading": "Exonic deletion in NRXN1",
+	    		"SubHeading": "Increase in Schizophrenia Risk",
+	    		"Description": "Negative description 8.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -5
+	    	},
+	    	{
+	    		"Heading": "T allele at rs10994336 in ANK3",
+	    		"SubHeading": "Increase in Bipolar Disorder Risk",
+	    		"Description": "Negative description 9.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -1
+	    	},
+	    	{
+	    		"Heading": "A allele at rs1432639 in NEGR1",
+	    		"SubHeading": "Increase in Major Depression Risk",
+	    		"Description": "Negative description 10.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -1
+	    	},
+	    	{
+	    		"Heading": "Single X Chromosome",
+	    		"SubHeading": "Increase in ADHD Risk",
+	    		"Description": "Negative description 11.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -2
+	    	}
+	    ]
+	},
+
+	"EnvironmentCards":
+	{
+		"GoodCards":
+	    [
+	    	{
+	    		"Heading": "Rural, Summer Birth",
+	    		"SubHeading": "",
+	    		"Description": "Positive description 1.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": 1
+	    	},
+	    	{
+	    		"Heading": "Healthy Pregnancy and Birth",
+	    		"SubHeading": "",
+	    		"Description": "Positive description 2.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": 2
+	    	},
+	    	{
+	    		"Heading": "Stable Family",
+	    		"SubHeading": "",
+	    		"Description": "Positive description 3.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": 3
+	    	},
+	    	{
+	    		"Heading": "Large Social Circle",
+	    		"SubHeading": "",
+	    		"Description": "Positive description 4.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": 2
+	    	},
+	    	{
+	    		"Heading": "Regular Employment with Reasonable Salary",
+	    		"SubHeading": "",
+	    		"Description": "Positive description 5.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": 2
+	    	},
+	    	{
+	    		"Heading": "Good Diet",
+	    		"SubHeading": "",
+	    		"Description": "Positive description 6.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": 1
+	    	},
+	    	{
+	    		"Heading": "Regular Exercise",
+	    		"SubHeading": "",
+	    		"Description": "Positive description 7.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": 2
+	    	},
+	    	{
+	    		"Heading": "Involvement in Hobbies and Cognitively-Demanding Past-Times",
+	    		"SubHeading": "",
+	    		"Description": "Positive description 7.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": 1
+	    	}
+	    ],
+
+	    "BadCards":
+	    [
+	    	{
+	    		"Heading": "Urban, Winter Birth",
+	    		"SubHeading": "",
+	    		"Description": "Negative description 1.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -1
+	    	},
+	    	{
+	    		"Heading": "Maternal Infection",
+	    		"SubHeading": "",
+	    		"Description": "Negative description 2.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -2
+	    	},
+	    	{
+	    		"Heading": "Severe Maternal Stress",
+	    		"SubHeading": "",
+	    		"Description": "Negative description 3.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -3
+	    	},
+	    	{
+	    		"Heading": "Obstetric Complications",
+	    		"SubHeading": "",
+	    		"Description": "Negative description 4.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -3
+	    	},
+	    	{
+	    		"Heading": "Family Discord",
+	    		"SubHeading": "",
+	    		"Description": "Negative description 5.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -2
+	    	},
+	    	{
+	    		"Heading": "Little Social Support",
+	    		"SubHeading": "",
+	    		"Description": "Negative description 6.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -3
+	    	},
+	    	{
+	    		"Heading": "Poverty",
+	    		"SubHeading": "",
+	    		"Description": "Negative description 7.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -2
+	    	},
+	    	{
+	    		"Heading": "Poor Diet",
+	    		"SubHeading": "",
+	    		"Description": "Negative description 8.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -1
+	    	},
+	    	{
+	    		"Heading": "Lack of Exercise",
+	    		"SubHeading": "",
+	    		"Description": "Negative description 9.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -2
+	    	},
+	    	{
+	    		"Heading": "Bullying or Victimisation",
+	    		"SubHeading": "",
+	    		"Description": "Negative description 10.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -2
+	    	},
+	    	{
+	    		"Heading": "Severe Trauma e.g. Physical or Sexual Abuse",
+	    		"SubHeading": "",
+	    		"Description": "Negative description 11.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -5
+	    	},
+	    	{
+	    		"Heading": "Drug or Alcohol Abuse",
+	    		"SubHeading": "",
+	    		"Description": "Negative description 12.",
+	    		"Gender": "",
+	    		"References": "",
+	    		"Points": -3
+	    	}
+	    ]
+	}
+}
